@@ -1,0 +1,209 @@
+/* ----- HTML ----- */
+html, body {
+
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Lora', serif;
+
+  letter-spacing: 0.3px;
+}
+
+
+/* ----- BODY ----- */
+
+body {
+    background-color: white;
+   font-family:'Lora', serif;
+
+}
+
+/* ----- Div container ----- */
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* ----- Left div inside container ----- */
+.left {
+    color: #efefef;
+    width: 50%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    overflow: hidden;
+
+}
+
+/* ----- Left div behavior on size screen changing ----- */
+
+@media screen and (max-width: 1000px)  {
+    .left{
+         position: static;
+          overflow: scroll;
+    }
+   
+}
+
+
+/* ----- Left div Background Image ----- */
+.left .bg-img {
+    background: url(https://lh6.googleusercontent.com/0f28gS_Dojqd1xuZbqvQcDNzKXmQ-t-jIMgerm3ru3rJbHpWQwqla1kdoS7tVu3hsezRGWtU9Likzj8vdpI=w1366-h637) center center no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+/* ----- Left div Background Image ----- */
+.left .bg-img:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #312e2e;
+background-image: linear-gradient(to left top, #3d846d , #185a9d);
+    opacity: 0.85;
+}
+
+/* ----- Left div .info ----- */
+
+.left .info {
+    -webkit-box-flex: 0;
+    -webkit-flex: none;
+    flex: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+   width: 100%;
+    margin: 0 auto;
+    margin-top: 50%;
+    font-family: 'Lora', serif;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .left .info {
+    margin-top: 300px;
+  }
+}
+
+
+@media screen and (max-width: 1000px) {
+  .left, .right {
+    display: block;
+    width: 100%;
+  }
+  .left {
+    position: static;
+    height: 500px;
+  }
+}
+
+
+/* ----- Right div ----- */
+
+.right {
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: scroll;
+    text-align: center;
+  font-size: 18px;
+}
+
+/* ----- Right div ----- */
+.right {
+    background-color: #e9ecef;
+     float: right;
+}
+
+/* ----- Right div ----- */
+.right .content {
+    width: 80%;
+    padding: 0;
+    margin: 0 0 50px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .right h4,
+    .right .content {
+        display: block;
+        vertical-align: top;
+        width: 100%;
+    }
+}
+
+
+
+
+
+/* unvisited link */
+
+a:link {
+    color: green;
+}
+
+
+
+/* visited link */
+
+a:visited {
+    color: blue;
+}
+
+
+
+/* mouse over link */
+
+a:hover {
+    color: grey;
+}
+
+
+
+/* selected link */
+
+a:active {
+    color: red;
+}
+
+/* Play button image - class(playBtn) */
+
+#playBtn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100px;
+    max-height: 100px;
+    margin-top: 3vh;
+}
+
+
+
+/**
+ * Footer Styles
+ */
+
+.footer {
+    font-style: oblique;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+}
