@@ -43,7 +43,7 @@ body {
 @media screen and (max-width: 1000px)  {
     .left{
          position: static;
-          overflow: scroll;
+/*           overflow: scroll; */
     }
    
 }
