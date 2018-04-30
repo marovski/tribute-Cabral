@@ -51,7 +51,7 @@ body {
 
 /* ----- Left div Background Image ----- */
 .left .bg-img {
-    background: url(Amilcar-Cabral.jpg) center center no-repeat;
+    background: url(../img/cabral.jpg) center center no-repeat;
     background-size: cover;
     height: 100%;
     width: 100%;
